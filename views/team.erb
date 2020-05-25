@@ -5,8 +5,11 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
+  
+  <h1><%= "Team Name: #{@form_hash["Team Name"]}" %></h1>
+  <% @form_hash.select {|k, v| k != "Team Name"}.each do |name, value| %>
+    <h2><%= "#{name}: #{value}" %></h2> 
+  <% end %>
 
  </body>
 </html>
