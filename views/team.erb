@@ -5,10 +5,14 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+     <h1>Team Name: <%=@name %></h1>
+     <h2>Coach: <%= @coach%></h2>
+     <h2>Point Guard: <%=@pg %></h2>
+     <h2>Shooting Guard: <%=params[:sg] %></h2>
+     <h2>Small Forward: <%=params[:sf] %></h2>
+     <h2>Power Forward: <%=params[:pf] %></h2>
+     <h2>Center: <%=params[:c] %></h2>
  </body>
 </html>
-
-
+<!-- #params are what is getting sent, the instance
+variables are supposed to be used to show the information -->
